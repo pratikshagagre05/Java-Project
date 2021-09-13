@@ -8,10 +8,11 @@ public class PalindromeBetween {
 		System.out.println("Enter Number : ");
 		int start = sc.nextInt();
 		int end = sc.nextInt();
-		int sum = 0, rem = 0;
+		
 		
 		for(int i=start;i<=end;i++)
 		{
+			int sum = 0, rem = 0;
 			int number=i;
 			while (number != 0)
 			{
@@ -26,5 +27,4 @@ public class PalindromeBetween {
 			
 		}
 	}
-
 }

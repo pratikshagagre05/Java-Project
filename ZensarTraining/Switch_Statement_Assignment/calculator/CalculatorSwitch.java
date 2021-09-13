@@ -13,9 +13,9 @@ public class CalculatorSwitch {
 		 int n2=sc.nextInt();
 		 
 		 System.out.println(" 1.Addition \n 2.Substraction \n 3.Multiplication \n 4.Division");
-		 int x= sc.nextInt();
+		 int choice= sc.nextInt();
 		 int operation=0; 
-		 switch(x) {
+		 switch(choice) {
 		 case 1 : operation= n1+n2; break;
 		 case 2 : operation= n1-n2; break;
 		 case 3: operation=n1*n2; break;

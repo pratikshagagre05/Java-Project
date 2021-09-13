@@ -1,4 +1,4 @@
-package TeacherClass;
+package TeacherClas;
 
 abstract public class Teacher {
 	int Tid,MobileNo;
@@ -27,7 +27,10 @@ class Hourlybased extends Teacher
 	}
     void show()
     {
-    	System.out.println("Salary = "+salary);
+    	System.out.println("Teacher id = "+super.Tid);
+    	System.out.println("Teacher Name = "+super.Tname);
+    	System.out.println("Teacher MobileNo = "+super.MobileNo);
+    	System.out.println("Salary = "+salary);   
     }
 }
 class SalaryBased extends Teacher{
@@ -40,12 +43,12 @@ class SalaryBased extends Teacher{
 
 	public void salary()
 	{
-		System.out.println("Salary function of Teacher Class = "+salary);
+		System.out.println("Salary function of Salary Based Class = "+salary);
 	}
 	public static void main(String[] args) {
-		//Hourlybased h=new SalaryBased();
-		//h.salary();
-		//h.show();
+		Hourlybased h=new Hourlybased(001, "Abhijit", 90221212, 18, 5);
+		h.salary();
+		h.show();
 		SalaryBased s= new SalaryBased(124,"efghi",36378257,50000);
 		s.salary();
 		
