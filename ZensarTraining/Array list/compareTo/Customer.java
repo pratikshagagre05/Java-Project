@@ -1,5 +1,6 @@
 package compareTo;
-import java.util.ArrayList; 
+import java.util.ArrayList;
+import java.util.Comparator; 
 
 public class Customer implements Comparable<Customer>
 {
@@ -18,7 +19,7 @@ public class Customer implements Comparable<Customer>
 		else if(this.cust_age>c.cust_age)
 			return 1;
 		else
-			return cust_id-this.cust_id;
+			return this.cust_id-cust_id;
 	}
 	public String toString()
 	{
